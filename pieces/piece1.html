@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Piece 1</title>
+	<style type="text/css">
+		* { box-sizing: border-box; }
+		* {margin:0;padding:0;}
+
+		/* 자식이 float를 사용하면 부모에서 clear를 해줘야 높이를 구할 수 있다 */
+		section article:after{content:'';display:block;clear:both;}
+		
+		section article {
+			display: flex;
+			width: fit-content;
+		}
+
+		section article div {
+			background: #eee;
+			vertical-align: top;
+		}
+
+		section article div span {
+			display: block;
+		}
+
+		span.title {
+			font-size: 12px;
+			height:75%;
+		}
+		span.writer {
+			font-size: 10px;
+			font-color: #eeeeee;
+		}
+
+	</style>
+</head>
+<body>
+
+	<section>
+		<article>
+			<a href=";">
+				<img src="images/piece1.jpeg" alt="세계적으로 아름답기로 소문난 수영장 호텔 7"/>
+			</a>
+			<div>
+				<span class="title">세계적으로 아름답기로 소문난 수영장 호텔 7</span>
+				<span class="writer">By 트레블클럽</span>
+			</div>
+		</article>
+	</section>
+
+</body>
+</html>

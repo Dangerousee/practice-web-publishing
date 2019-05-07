@@ -1,0 +1,75 @@
+h1, p {
+	background-color: #DDE0E3;
+}
+
+em, strong {
+	background-color: #B2D6FF;
+}
+
+/* Block elements and inline elements
+h1, p {
+	background-color: #DDE0E3;
+}
+
+em, strong {
+	background-color: #B2D6FF;
+}
+*/
+
+/* Changing box behavior
+h1, p {
+	background-color: #DDE0E3;
+}
+
+em, strong {
+	background-color: #B2D6FF;
+	display:block;
+}
+*/
+
+/* Vertical margin collapse
+p {
+  padding: 20px 0 20px 10px;
+
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+*/
+
+/* Generic boxes */
+div {
+  color: #FFF;
+  background-color: #5995DA;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #5D6063;
+  border-radius: 5px;
+  width: 200px;
+  
+  /* 
+  	This forces the actual width of the box to be 200px—including padding and borders. 
+  	this means that the content width is now determined automatically
+  */
+  box-sizing: border-box;
+  margin: 20px auto; /* [Centering with auto-margins] Vertical  Horizontal */
+}
+
+/*
+Try adding the following rule to our stylesheet. It will only align the content inside of our block boxes—not the blocks themselves. 
+Our <div> button is still left-aligned regardless of the <body>’s text alignment:
+
+There are three methods for horizontally aligning block-level elements: 
+	“auto-margins” for center alignment .
+	“floats” for left/right alignment.
+	“flexbox” for complete control over alignment.
+*/
+body {
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
