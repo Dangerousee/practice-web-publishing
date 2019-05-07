@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  width: 900px;
+  margin: 0 auto;
+  /*
+  [ After a float ]
+  You probably noticed that our footer shows up in the top right, directly below .menu. 
+  That’s because floated boxes are removed from the normal flow of the page. 
+  The height of our floated elements don’t contribute to the vertical position of the footer, 
+  so it simply sticks itself below the last element that wasn’t floated.
+
+  Notice how the border is only around the .menu and .footer elements. It’s as if the floated elements weren’t even there. 
+  There are two ways to fix this: clearing a float and hiding overflow.
+  */
+  border: 1px solid red;  
+}
+
+.menu {
+  height: 100px;
+  background-color: #B2D6FF;    /* Medium blue */
+}
+
+.sidebar {
+  float: left;                  /* Add this */
+  width: 200px;
+  height: 300px;
+  background-color: #F09A9D;
+}
+
+.content {
+  float: left;                  /* Add this */
+  width: 650px;                 /* Add this */
+  height: 500px;
+  background-color: #F5CF8E;    /* Yellow */
+}
+
+.footer {
+  height: 200px;
+  background-color: #D6E9FE;    /* Light blue */
+  /*
+  [ Clearing floats ]
+  “Clearing” a float is when we tell a block to ignore any floats that appear before it. 
+  Instead of flowing around the floated box, a cleared element always appears after any floats. 
+  It’s like forcing a box back into the default vertical flow of the page.
+
+  Usually, you want to clear both left and right floats as we did here, 
+  but you can choose to clear only one or the other with the left or right values. 
+  */
+  clear: both;
+}
