@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dropdown menu 1</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			box-sizing: border-box;
+		}
+
+		.header-container:after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+
+		.header-container {
+			/*overflow: hidden;*/
+			margin: auto;
+			background: lightgray;
+		}
+
+		.header-container > div {			
+			border: 1px solid black;
+		}
+
+		.title-area {
+			width: 30%;					
+		}
+
+		.menu-area {
+			width: 70%;
+		}
+
+		.title-area,
+		.menu-area {
+			line-height: 100px;
+			height: 100px;	
+			float: left;
+			text-align: center;
+		}
+
+		.menu > li {
+			float: left;
+			position: relative;
+			width: 20%;			
+		}
+
+		.menu > li:hover .submenu {			
+			display: block;
+		}
+
+		.submenu {
+			display: none;
+			position: absolute;
+			width: 100px;
+			top: 70px;
+			left: 0;
+			line-height: 20px;
+			border: 1px solid red;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="header-container">
+		<div class="title-area">
+			<p>Dropdown Menu 1</p>	
+		</div>
+		<div class="menu-area">
+			<ul class="menu">
+				<li>
+					<h2>Menu1</h2>
+					<ul class="submenu">
+						<li><h3>1-Sub1</h3></li>
+						<li><h3>1-Sub2</h3></li>
+						<li><h3>1-Sub3</h3></li>
+					</ul>
+				</li>
+				<li>
+					<h2>Menu2</h2>
+					<ul class="submenu">
+						<li><h3>2-Sub1</h3></li>
+						<li><h3>2-Sub2</h3></li>
+						<li><h3>2-Sub3</h3></li>
+					</ul>
+				</li>				
+				<li>
+					<h2>Menu3</h2>
+					<ul class="submenu">
+						<li><h3>3-Sub1</h3></li>
+						<li><h3>3-Sub2</h3></li>
+						<li><h3>3-Sub3</h3></li>
+						<li><h3>3-Sub4</h3></li>
+						<li><h3>3-Sub5</h3></li>
+					</ul>
+				</li>
+				<li>
+					<h2>Menu4</h2>
+					<ul class="submenu">
+						<li><h3>4-Sub1</h3></li>
+						<li><h3>4-Sub2</h3></li>
+						<li><h3>4-Sub3</h3></li>
+					</ul>
+				</li>
+				<li>
+					<h2>Menu5</h2>
+					<ul class="submenu">
+						<li><h3>5-Sub1</h3></li>
+						<li><h3>5-Sub2</h3></li>
+						<li><h3>5-Sub3</h3></li>
+						<li><h3>5-Sub4</h3></li>
+						<li><h3>5-Sub5</h3></li>
+					</ul>
+				</li>												
+			</ul>
+		</div>
+	</div>
+
+</body>
+</html>
