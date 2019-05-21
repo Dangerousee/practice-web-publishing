@@ -27,6 +27,7 @@
 		.menu {
 			float: left;
 			width: 200px;
+			height: 398px;
 			list-style: none;
 			background: lightgray;						
 		}
@@ -54,12 +55,24 @@
 			position: absolute;
 			left:200px;
 			width: 598px;
-			height: 398px;
+			height: 398px;	
 			display: none;			
+			background-color: #4CAF50;
 		}
 
-		.menu > li:nth-child(1):hover .article {
+		.active {
+			background-color: #ddd;
+			color: black;
+		}
+
+		.menu > li:hover .active{
+			background-color: #4CAF50;
+			color: white;
+		}
+
+		.menu > li:nth-child(1):hover .article{
 			display: inline-block;
+			
 		}
 		.menu > li:nth-child(2):hover .article {
 			top: -80px;
@@ -85,7 +98,7 @@
 
 		<ul class="menu">
 			<li>
-				<img src="?" class="title-image" alt="Menu 1">
+				<span class="active">Menu 1</span>
 				<div class="article">
 					<img src="?" class="article-image">
 
@@ -100,9 +113,9 @@
 				</div>
 			</li>
 			<li>
-				<img src="?" class="title-image" alt="Menu 2">
+				<span class="active">Menu 2</span>
 				<div class="article">
-					<img src="?" class="article-image">
+					<img src="?" class="article-image">				
 
 					<h1> This is title 222</h1>
 					<p class="comment">
@@ -115,9 +128,10 @@
 				</div>
 			</li>
 			<li>
-				<img src="?" class="title-image" alt="Menu 3">
+				<span class="active">Menu 3</span>
 				<div class="article">
-					<img src="?" class="article-image">
+					<img src="?" class="article-image">				
+					
 
 					<h1> This is title 333</h1>
 					<p class="comment">
@@ -130,9 +144,10 @@
 				</div>
 			</li>
 			<li>
-				<img src="?" class="title-image" alt="Menu 4">
+				<span class="active">Menu 4</span>
 				<div class="article">
-					<img src="?" class="article-image">
+					<img src="?" class="article-image">				
+					
 
 					<h1> This is title 444</h1>
 					<p class="comment">
@@ -145,9 +160,10 @@
 				</div>				
 			</li>
 			<li>
-				<img src="?" class="title-image" alt="Menu 5">
+				<span class="active">Menu 5</span>
 				<div class="article">
-					<img src="?" class="article-image">
+					<img src="?" class="article-image">				
+					
 
 					<h1> This is title 555</h1>
 					<p class="comment">
