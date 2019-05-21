@@ -65,14 +65,19 @@
 			color: black;
 		}
 
-		.menu > li:hover .active{
+		.menu > li:hover {
 			background-color: #4CAF50;
 			color: white;
 		}
 
+		/*.menu > li:hover .active{
+			background-color: #4CAF50;
+			color: white;
+		}*/
+
 		.menu > li:nth-child(1):hover .article{
 			display: inline-block;
-			
+
 		}
 		.menu > li:nth-child(2):hover .article {
 			top: -80px;
@@ -90,6 +95,7 @@
 			top: -320px;
 			display: inline-block;
 		}
+		.article:hover + span{font-size:30px;}
 	</style>
 </head>
 <body>
@@ -98,7 +104,7 @@
 
 		<ul class="menu">
 			<li>
-				<span class="active">Menu 1</span>
+				Menu 1
 				<div class="article">
 					<img src="?" class="article-image">
 
@@ -111,6 +117,7 @@
 					    mus scelerisque eget ridiculus.Accumsan dolor a.
 					</p>
 				</div>
+				<span>hover test<span>
 			</li>
 			<li>
 				<span class="active">Menu 2</span>
