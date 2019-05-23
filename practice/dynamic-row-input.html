@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+
+<style type="text/css">
+
+	* {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	
+	.frame-window {
+		width: 600px;
+		margin: auto;
+	}
+
+	.frame-header {		
+		height: 100px;
+		background: lightgray;
+	}
+
+	.frame-contents {
+		height: 500px;
+	}
+
+	.frame-footer {
+		height: 100px;	
+		background: lightgray;
+	}
+
+	/* == */
+
+	.row:after {
+		content: '';
+		display: block;
+		clear: both;
+	}	
+
+	.row {
+		background: lightgreen;
+	}
+
+	.row > li {
+		float: left;
+	}
+
+	.info-column {
+		float: left;
+		width: 50px;
+		text-align: center;
+	}
+
+	.desc-column {
+		float: left;
+		width: 450px;
+	}
+
+	.button-column {
+		float: right;
+		width: 100px;
+	}
+	
+	.button-column > div {
+		display: inline-block;
+	}
+
+	.button-column > div > button, span {
+		display: block;
+	}
+</style>
+</head>
+<body>
+
+	<div class="frame-window">
+	
+		<div class="frame-header">
+			
+		</div>
+
+		<div class="frame-contents">
+			<ul class="row">
+				<li class="info-column">
+					<span>&#8593;</span>
+					<span>3</span>
+				</li>
+				<li class="desc-column">
+					<p>사레레</p>
+				</li>
+				<li class="button-column">
+					<div class="sets">
+						<button type="button" class="increase">&#8593;</button>
+						<span>5</span>
+						<button type="button" class="decrease">&#8595;</button>
+					</div>
+					<div class="multiplication-simbol">x</div>
+					<div class="reps">
+						<button type="button" class="increase">&#8593;</button>
+						<span>5</span>
+						<button type="button" class="decrease">&#8595;</button>
+					</div>
+					<div class="multiplication-simbol">x</div>
+					<div class="kg">
+						<button type="button" class="increase">&#8593;</button>
+						<span>5</span>
+						<button type="button" class="decrease">&#8595;</button>
+					</div>	
+				</li>
+			</ul>
+		</div>
+
+		<div class="frame-footer">
+			
+		</div>
+
+	</div>
+
+</body>
+</html>
