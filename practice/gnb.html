@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GNB</title>
+	<style type="text/css">
+
+		* {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		.window-frame {
+			width: 800px;
+			margin: auto;
+		}
+
+		.gnb-frame {
+			padding: 10px;
+			background: #2355b4;
+			text-align: center;
+			color: white;
+			font-size: 12px;
+		}
+
+		.gnb-frame:after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+
+		.gnb > li {
+			position: relative;
+			width: 100px;
+			float: left;			
+			
+		}
+
+		.gnb > li:hover .gnb-sub {
+			display: block;
+		}
+
+		.gnb-sub {
+			width: 80%;
+			display: none;
+			position: absolute;
+			left: 10px;
+			padding-top: 15px;
+			padding-bottom: 10px;
+			background: #2355b4;
+		}
+
+		.gnb-sub > li {
+			padding: 3px;
+		}
+
+		.gnb-sub > li:hover {
+			text-decoration: underline;
+		}
+
+		.search {
+			float: right;
+			width: 100px;
+		}
+
+		input.search:hover {
+			width: 200px;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="window-frame">
+		<h1>스포츠 홈</h1>
+		<div class="gnb-frame">
+			<ul class="gnb">
+				<li>야구
+					<ul class="gnb-sub">
+						<li>야구1</li>
+						<li>야구2</li>
+						<li>야구3</li>
+						<li>야구4</li>
+					</ul>					
+				</li>
+				<li>해외야구
+					<ul class="gnb-sub">
+						<li>해외야구1</li>
+						<li>해외야구2</li>
+						<li>해외야구3</li>
+					</ul>
+				</li>
+				<li>축구</li>
+				<li>해외축구
+					<ul class="gnb-sub">
+						<li>해외축구1</li>
+						<li>해외축구2</li>
+						<li>해외축구3</li>
+					</ul>
+				</li>
+				<li>농구
+					<ul class="gnb-sub">
+						<li>농구1</li>
+						<li>농구2</li>
+						<li>농구3</li>
+					</ul>
+				</li>
+			</ul>	
+			<input type="text" class="search" />
+		</div>		
+	</div>
+</body>
+</html>
