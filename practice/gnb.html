@@ -36,29 +36,29 @@
 			
 		}
 
-		.gnb > li:hover .gnb-sub {
+		.gnb > li:hover .wrap {
 			display: block;
 		}
-		.wrap{
+
+		.wrap {
 			width: 100%;
-			/*display: none;*/
+			display: none;
 			position: absolute;
 			left: 0px;
-			padding-top: 15px;
-			padding-bottom: 10px;
-			background: red;
+			padding-top: 10px;			
 		}
+
 		.gnb-sub {
-			margin:0 10px 10px 10px;
-			background:gold;
+			margin:0 10px 10px 20px;
+			background: #2355b4;
 		}
 
 		.gnb-sub > li {
-			padding: 3px;
+			padding: 5px 0px 5px 0px;
 		}
 
-		.gnb-sub > li:hover {
-			text-decoration: underline;
+		.gnb-sub > li:last-child {
+			padding-bottom: 10px;
 		}
 
 		.search {
@@ -67,11 +67,20 @@
 			border:1px #eee solid;
 			border-radius:3px;
 			background:#eeeff8;
-			transition:width .5s
+			transition:width .2s
 		}
 
 		input.search:hover {
 			width: 200px;
+		}
+
+		a:link,
+		a:visited {
+		  color: white;
+		  text-decoration: none;
+		}
+		a:hover {
+		  text-decoration: underline;
 		}
 
 	</style>
@@ -86,34 +95,43 @@
 					<a href="">야구</a>
 					<div class="wrap">
 						<ul class="gnb-sub">
-							<li>야구1</li>
-							<li>야구2</li>
-							<li>야구3</li>
-							<li>야구4</li>
+							<li><a href="">야구1</a></li>
+							<li><a href="">야구2</a></li>
+							<li><a href="">야구3</a></li>
+							<li><a href="">야구4</a></li>
 						</ul>
 					</div>			
 				</li>
-				<li>해외야구
-					<ul class="gnb-sub">
-						<li>해외야구1</li>
-						<li>해외야구2</li>
-						<li>해외야구3</li>
-					</ul>
+				<li>
+					<a href="">해외야구</a>
+					<div class="wrap">
+						<ul class="gnb-sub">
+							<li><a href="">해외야구1</a></li>
+							<li><a href="">해외야구2</a></li>
+							<li><a href="">해외야구3</a></li>
+						</ul>
+					</div>
 				</li>
-				<li>축구</li>
-				<li>해외축구
-					<ul class="gnb-sub">
-						<li>해외축구1</li>
-						<li>해외축구2</li>
-						<li>해외축구3</li>
-					</ul>
+				<li><a href="">축구</a></li>
+				<li>
+					<a href="">해외축구</a>
+					<div class="wrap">
+						<ul class="gnb-sub">
+							<li><a href="">해외축구1</a></li>
+							<li><a href="">해외축구2</a></li>
+							<li><a href="">해외축구3</a></li>
+						</ul>
+					</div>
 				</li>
-				<li>농구
-					<ul class="gnb-sub">
-						<li>농구1</li>
-						<li>농구2</li>
-						<li>농구3</li>
-					</ul>
+				<li>
+					<a href="">농구</a>
+					<div class="wrap">
+						<ul class="gnb-sub">
+							<li><a href="">농구1</a></li>
+							<li><a href="">농구2</a></li>
+							<li><a href="">농구3</a></li>							
+						</ul>
+					</div>
 				</li>
 			</ul>	
 			<input type="text" class="search" />
