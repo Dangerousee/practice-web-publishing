@@ -16,7 +16,7 @@
 		}
 
 		.gnb-frame {
-			padding: 10px;
+			padding: 10px 10px 10px 0;
 			background: #2355b4;
 			text-align: center;
 			color: white;
@@ -39,15 +39,18 @@
 		.gnb > li:hover .gnb-sub {
 			display: block;
 		}
-
-		.gnb-sub {
-			width: 80%;
-			display: none;
+		.wrap{
+			width: 100%;
+			/*display: none;*/
 			position: absolute;
-			left: 10px;
+			left: 0px;
 			padding-top: 15px;
 			padding-bottom: 10px;
-			background: #2355b4;
+			background: red;
+		}
+		.gnb-sub {
+			margin:0 10px 10px 10px;
+			background:gold;
 		}
 
 		.gnb-sub > li {
@@ -61,6 +64,10 @@
 		.search {
 			float: right;
 			width: 100px;
+			border:1px #eee solid;
+			border-radius:3px;
+			background:#eeeff8;
+			transition:width .5s
 		}
 
 		input.search:hover {
@@ -75,13 +82,16 @@
 		<h1>스포츠 홈</h1>
 		<div class="gnb-frame">
 			<ul class="gnb">
-				<li>야구
-					<ul class="gnb-sub">
-						<li>야구1</li>
-						<li>야구2</li>
-						<li>야구3</li>
-						<li>야구4</li>
-					</ul>					
+				<li>
+					<a href="">야구</a>
+					<div class="wrap">
+						<ul class="gnb-sub">
+							<li>야구1</li>
+							<li>야구2</li>
+							<li>야구3</li>
+							<li>야구4</li>
+						</ul>
+					</div>			
 				</li>
 				<li>해외야구
 					<ul class="gnb-sub">
