@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title></title>
 
 <style type="text/css">
@@ -8,113 +9,164 @@
 	* {
 		margin: 0;
 		padding: 0;
+		box-sizing: border-box;
 		list-style: none;
 	}
-	
-	.frame-window {
-		width: 600px;
+
+	.row {
 		margin: auto;
-	}
-
-	.frame-header {		
-		height: 100px;
 		background: lightgray;
+		border-bottom: 1px solid black;
 	}
-
-	.frame-contents {
-		height: 500px;
-	}
-
-	.frame-footer {
-		height: 100px;	
-		background: lightgray;
-	}
-
-	/* == */
 
 	.row:after {
 		content: '';
 		display: block;
 		clear: both;
+	}
+
+	.col {
+		float: left;
+		height: 60px;				
+	}
+
+	.col p {
+
+	}
+
+	.info {
+		position: relative;				
+		width: 10%;
+		border-right: 1px solid black;
+		text-align: center;
+		padding-top: 10px;
+	}
+
+	.info > img {
+		width: 20px;
+		height: 20px;
+	}
+
+	.title {
+		width: 50%;
+		line-height: 60px;	
+	}
+
+	.title > p {
+		padding-left: 20px;
+	}
+
+	.panel {
+		width: 40%;
 	}	
 
-	.row {
-		background: lightgreen;
+	.panel > ul {
+		float: right;
+		padding-right: 10px;
 	}
 
-	.row > li {
+	.panel > ul > li {
+		position: relative;		
 		float: left;
+		width: 20px;	
 	}
 
-	.info-column {
-		float: left;
-		width: 50px;
+	.panel p {
+		line-height: 60px;	
 		text-align: center;
 	}
 
-	.desc-column {
-		float: left;
-		width: 450px;
+	.arrow {
+		position: absolute;
+		width: 20px;
+		height: 20px;
 	}
 
-	.button-column {
-		float: right;
-		width: 100px;
-	}
-	
-	.button-column > div {
-		display: inline-block;
+	.arrow-up {
+		top: 1px;
 	}
 
-	.button-column > div > button, span {
-		display: block;
+	.arrow-dn {
+		bottom: 1px;
 	}
 </style>
-</head>
+</head>	
 <body>
-
-	<div class="frame-window">
 	
-		<div class="frame-header">
-			
+	<div class="row">
+		
+		<div class="col info">
+			<img src="?" />
+			<p>5</p>				
 		</div>
 
-		<div class="frame-contents">
-			<ul class="row">
-				<li class="info-column">
-					<span>&#8593;</span>
-					<span>3</span>
+		<div class="col title">
+			<p>사레레</p>
+		</div>
+
+		<div class="col panel">
+			<ul>
+				<li class="widget">
+					<img src="?" class="arrow arrow-up" />
+					<p>5</p>
+					<img src="?" class="arrow arrow-dn" />
 				</li>
-				<li class="desc-column">
-					<p>사레레</p>
+				<li class="mutiplication-simbol">
+					<p>x</p>
 				</li>
-				<li class="button-column">
-					<div class="sets">
-						<button type="button" class="increase">&#8593;</button>
-						<span>5</span>
-						<button type="button" class="decrease">&#8595;</button>
-					</div>
-					<div class="multiplication-simbol">x</div>
-					<div class="reps">
-						<button type="button" class="increase">&#8593;</button>
-						<span>5</span>
-						<button type="button" class="decrease">&#8595;</button>
-					</div>
-					<div class="multiplication-simbol">x</div>
-					<div class="kg">
-						<button type="button" class="increase">&#8593;</button>
-						<span>5</span>
-						<button type="button" class="decrease">&#8595;</button>
-					</div>	
+				<li class="widget">
+					<img src="?" class="arrow arrow-up" />
+					<p>5</p>
+					<img src="?" class="arrow arrow-dn" />				
+				</li>
+				<li class="mutiplication-simbol">
+					<p>x</p>
+				</li>
+				<li class="widget">
+					<img src="?" class="arrow arrow-up" />
+					<p>5</p>
+					<img src="?" class="arrow arrow-dn" />
 				</li>
 			</ul>
 		</div>
-
-		<div class="frame-footer">
+	</div>
+	<div class="row">
 			
+			<div class="col info">
+				<img src="?" />
+				<p>5</p>	
+			</div>
+
+			<div class="col title">
+				<p>사레레</p>
+			</div>
+
+			<div class="col panel">
+				<ul>
+					<li class="widget">
+						<img src="?" class="arrow arrow-up" />
+						<p>5</p>
+						<img src="?" class="arrow arrow-dn" />
+					</li>
+					<li class="mutiplication-simbol">
+						<p>x</p>
+					</li>
+					<li class="widget">
+						<img src="?" class="arrow arrow-up" />
+						<p>5</p>
+						<img src="?" class="arrow arrow-dn" />				
+					</li>
+					<li class="mutiplication-simbol">
+						<p>x</p>
+					</li>
+					<li class="widget">
+						<img src="?" class="arrow arrow-up" />
+						<p>5</p>
+						<img src="?" class="arrow arrow-dn" />
+					</li>
+				</ul>
+			</div>
 		</div>
 
-	</div>
-
-</body>
+</body>	
 </html>
