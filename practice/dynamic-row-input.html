@@ -39,9 +39,12 @@
 		width: 10%;
 		border-right: 1px solid black;
 		text-align: center;
-		padding-top: 10px;
+		display:table;
 	}
-
+	.info span{
+		display: table-cell;
+		vertical-align: middle;
+	}
 	.info > img {
 		width: 20px;
 		height: 20px;
@@ -96,8 +99,10 @@
 	<div class="row">
 		
 		<div class="col info">
-			<img src="?" />
-			<p>5</p>				
+			<span>
+				<img src="?" />
+				<p>5</p>				
+			</span>
 		</div>
 
 		<div class="col title">
