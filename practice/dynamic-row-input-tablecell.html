@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dynamic row input with tablecell</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		.container {
+			background: lightgray;
+		}
+
+		.row:after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+
+		.col {
+			float: left;
+			height: 60px;
+		}
+
+		.udrate { 
+			display: table;
+			width: 10%; 
+			text-align: center;
+		}
+		.title { 
+			display: table;
+			width: 70%; 
+		}
+		.control { 
+			display: table;
+			width: 20%;
+			text-align: center; 
+		}
+
+		.cell {
+			display: table-cell;
+			vertical-align: middle;			
+		}
+
+		input	{
+			margin: auto;
+			width: 10px;
+			display: block;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		
+		<ul class="row">
+			<li class="col udrate">
+				<div class="cell">
+					<img src="?" />
+					<p>5</p>
+				</div>
+			</li>
+			<li class="col title">
+				<div class="cell">
+					<p>사레레</p>
+				</div>
+			</li>
+			<li class="col control">
+				<div class="cell">
+					<p>Sets</p>
+					<img src="?" />
+					<input type="text" value="5">
+					<img src="?" />
+				</div>
+				<div>
+					<p>X</p>	
+				</div>				
+				<div class="cell">
+					<p>Reps</p>
+					<img src="?" />
+					<input type="text" value="5">
+					<img src="?" />
+				</div>
+				<div>
+					<p>X</p>	
+				</div>
+				<div class="cell">
+					<p>Kg</p>
+					<img src="?" />
+					<input type="text" value="5">
+					<img src="?" />
+				</div>
+			</li>
+		</ul>
+
+	</div>
+
+</body>
+</html>
