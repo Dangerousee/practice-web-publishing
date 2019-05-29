@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>dynamic row input 3</title>
+	<style type="text/css">
+
+		* {
+			margin: 0;
+			padding: 0;
+			list-style: none; 
+			font-size: 12px;
+		}
+
+		.container {}
+		.list-header {}
+		.list-content {
+			background: lightgray;
+		}
+
+		.col-wid-1 { width: 10%; }
+		.col-wid-2 { width: 50%; }
+		.col-wid-3 { width: 40%; }
+		.control-div-wid {
+			width: 25%;
+		}
+		.vtc-ctr {
+			display: table-cell;
+			vertical-align: middle;
+		}
+
+
+		.list-header:after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+
+		.list-row:after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+
+		.list-row {
+			padding-top: 5px;
+			padding-bottom: 5px; 
+		}
+
+		.updrate {
+			float: left;
+			display: table;
+			text-align: center;
+			height: 50px;
+		}
+
+		.title {
+			float: left;
+			display: table;
+			height: 50px;
+		}
+
+		.control {
+			float: left;
+			display: table;
+			text-align: center;
+		}
+
+		.list-content input {
+			display: block;
+			width: 10px;
+			margin: auto;
+		}
+
+		p.up {
+			color: red;
+		}
+
+		p.down {
+			color: blue;
+		}
+
+		img {
+			vertical-align: top;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<div class="list-header">
+			<div class="col-wid-1" style="float: left;">&nbsp;</div>
+			<div class="col-wid-2" style="float: left;">&nbsp;</div>
+			<div class="col-wid-3" style="float: left; text-align: center;">
+				<ul>
+					<li class="control-div-wid" style="float: left;"><p>Sets</p></li>
+					<li class="control-div-wid" style="float: left;"><p>Reps</p></li>
+					<li class="control-div-wid" style="float: left;"><p>Kgs</p></li>
+					<li class="control-div-wid" style="float: left;">&nbsp;</li>
+				</ul>
+					<!-- <div class="control-div-wid" style="float: left;"><p>Sets</p></div>
+					<div class="control-div-wid" style="float: left;"><p>Reps</p></div>
+					<div class="control-div-wid" style="float: left;"><p>Kgs</p></div>
+					<div class="control-div-wid" style="float: left;">&nbsp;</div> -->
+			</div>
+		</div>
+		<ul class="list-content">
+			<li class="list-row">
+				<div class="col-wid-1 updrate">
+					<div class="vtc-ctr">
+						<img src="?" />
+						<p>5</p>
+					</div>
+				</div>
+				<div class="col-wid-2 title">
+					<div class="vtc-ctr">
+						<p>가나다라 테스트</p>
+					</div>
+				</div>
+				<div class="col-wid-3 control">
+					<div class="vtc-ctr control-div-wid">
+						<img src=? />
+						<input type="text" value="5" />
+						<img src=? />
+					</div>
+					<div class="vtc-ctr control-div-wid">
+						<img src=? />
+						<input type="text" value="5" />
+						<img src=? />
+					</div>
+					<div class="vtc-ctr control-div-wid">
+						<img src=? />
+						<input type="text" value="5" />
+						<img src=? />
+					</div>
+					<div class="vtc-ctr control-div-wid">
+						<p class="up">+5</p>
+					</div>
+				</div>
+			</li>
+			<li class="list-row">
+				<div class="col-wid-1 updrate">
+					<div class="vtc-ctr">
+						<img src="?" />
+						<p>5</p>
+					</div>
+				</div>
+				<div class="col-wid-2 title">
+					<div class="vtc-ctr">
+						<p>가나다라 테스트</p>
+					</div>
+				</div>
+				<div class="col-wid-3 control">
+					<div class="vtc-ctr control-div-wid">
+						<img src=? />
+						<input type="text" value="5" />
+						<img src=? />
+					</div>
+					<div class="vtc-ctr control-div-wid">
+						<img src=? />
+						<input type="text" value="5" />
+						<img src=? />
+					</div>
+					<div class="vtc-ctr control-div-wid">
+						<img src=? />
+						<input type="text" value="5" />
+						<img src=? />
+					</div>
+					<div class="vtc-ctr control-div-wid">
+						<p class="down">-5</p>
+					</div>
+				</div>
+			</li>			
+		</ul>
+	</div>
+
+</body>
+</html>
