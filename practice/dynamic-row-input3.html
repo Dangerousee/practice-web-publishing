@@ -9,13 +9,17 @@
 			margin: 0;
 			padding: 0;
 			list-style: none; 
-			font-size: 12px;
+			font-size: 11px;
 		}
 
 		.container {}
-		.list-header {}
+		.list-header {
+			border-bottom: 2px solid #AAAAAA;
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
 		.list-content {
-			background: lightgray;
+			/*background: lightgray;*/
 		}
 
 		.col-wid-1 { width: 10%; }
@@ -44,7 +48,9 @@
 
 		.list-row {
 			padding-top: 5px;
-			padding-bottom: 5px; 
+			padding-bottom: 5px;
+			border-bottom: 1px solid lightgray;
+			border-bottom-style: dotted;
 		}
 
 		.updrate {
@@ -68,8 +74,12 @@
 
 		.list-content input {
 			display: block;
-			width: 10px;
+			width: 22px;
+			height: 17px;
 			margin: auto;
+			border: 1px solid lightgray;
+			border-radius: 3px;
+			text-align: center;
 		}
 
 		p.up {
@@ -80,9 +90,27 @@
 			color: blue;
 		}
 
-		img {
-			vertical-align: top;
+		p.nochanges {
+			color: black;
 		}
+
+		.updrate button, .title button, .control button {
+			border: 1px solid white;
+			background: white;			
+		}
+
+		.add-row > div {
+			display: block;
+			text-align: center;
+		}
+
+		.add-row button {
+			border: 1px solid lightgray;
+			width: 20px;
+			height: 20px;
+			border-radius: 20px;
+		}
+
 	</style>
 </head>
 <body>
@@ -93,9 +121,9 @@
 			<div class="col-wid-2" style="float: left;">&nbsp;</div>
 			<div class="col-wid-3" style="float: left; text-align: center;">
 				<ul>
-					<li class="control-div-wid" style="float: left;"><p>Sets</p></li>
-					<li class="control-div-wid" style="float: left;"><p>Reps</p></li>
-					<li class="control-div-wid" style="float: left;"><p>Kgs</p></li>
+					<li class="control-div-wid" style="float: left;"><p><b>Sets</b></p></li>
+					<li class="control-div-wid" style="float: left;"><p><b>Reps</b></p></li>
+					<li class="control-div-wid" style="float: left;"><p><b>Kgs</b></p></li>
 					<li class="control-div-wid" style="float: left;">&nbsp;</li>
 				</ul>
 					<!-- <div class="control-div-wid" style="float: left;"><p>Sets</p></div>
@@ -108,8 +136,9 @@
 			<li class="list-row">
 				<div class="col-wid-1 updrate">
 					<div class="vtc-ctr">
-						<img src="?" />
-						<p>5</p>
+						<!-- <img src="?" /> -->
+						<p class="nochanges"><b>-</b></p>
+						<p class="nochanges"><b>5</b></p>
 					</div>
 				</div>
 				<div class="col-wid-2 title">
@@ -119,19 +148,53 @@
 				</div>
 				<div class="col-wid-3 control">
 					<div class="vtc-ctr control-div-wid">
-						<img src=? />
-						<input type="text" value="5" />
-						<img src=? />
+						<button>+</button>
+						<input type="text" value="5" maxlength="3"/>
+						<button>-</button>
 					</div>
 					<div class="vtc-ctr control-div-wid">
-						<img src=? />
-						<input type="text" value="5" />
-						<img src=? />
+						<button>+</button>
+						<input type="text" value="5" maxlength="3"/>
+						<button>-</button>
 					</div>
 					<div class="vtc-ctr control-div-wid">
-						<img src=? />
-						<input type="text" value="5" />
-						<img src=? />
+						<button>+</button>
+						<input type="text" value="5" maxlength="3"/>
+						<button>-</button>
+					</div>
+					<div class="vtc-ctr control-div-wid">
+						<p class="up">+5</p>
+					</div>
+				</div>
+			</li>			
+			<li class="list-row">
+				<div class="col-wid-1 updrate">
+					<div class="vtc-ctr">
+						<!-- <img src="?" /> -->
+						<p class="up"><b>&#8593;</b></p>
+						<p class="up"><b>5</b></p>
+					</div>
+				</div>
+				<div class="col-wid-2 title">
+					<div class="vtc-ctr">
+						<p>가나다라 테스트</p>
+					</div>
+				</div>
+				<div class="col-wid-3 control">
+					<div class="vtc-ctr control-div-wid">
+						<button>+</button>
+						<input type="text" value="5" maxlength="3"/>
+						<button>-</button>
+					</div>
+					<div class="vtc-ctr control-div-wid">
+						<button>+</button>
+						<input type="text" value="5" maxlength="3"/>
+						<button>-</button>
+					</div>
+					<div class="vtc-ctr control-div-wid">
+						<button>+</button>
+						<input type="text" value="5" maxlength="3"/>
+						<button>-</button>
 					</div>
 					<div class="vtc-ctr control-div-wid">
 						<p class="up">+5</p>
@@ -141,8 +204,9 @@
 			<li class="list-row">
 				<div class="col-wid-1 updrate">
 					<div class="vtc-ctr">
-						<img src="?" />
-						<p>5</p>
+						<!-- <img src="?" /> -->
+						<p class="down"><b>&#8595;</b></p>
+						<p class="down"><b>5</b></p>
 					</div>
 				</div>
 				<div class="col-wid-2 title">
@@ -152,25 +216,30 @@
 				</div>
 				<div class="col-wid-3 control">
 					<div class="vtc-ctr control-div-wid">
-						<img src=? />
-						<input type="text" value="5" />
-						<img src=? />
+						<button>+</button>
+						<input type="text" value="5" maxlength="3"/>
+						<button>-</button>
 					</div>
 					<div class="vtc-ctr control-div-wid">
-						<img src=? />
-						<input type="text" value="5" />
-						<img src=? />
+						<button>+</button>
+						<input type="text" value="5" maxlength="3"/>
+						<button>-</button>
 					</div>
 					<div class="vtc-ctr control-div-wid">
-						<img src=? />
-						<input type="text" value="5" />
-						<img src=? />
+						<button>+</button>
+						<input type="text" value="5" maxlength="3"/>
+						<button>-</button>
 					</div>
 					<div class="vtc-ctr control-div-wid">
 						<p class="down">-5</p>
 					</div>
 				</div>
-			</li>			
+			</li>
+			<li class="list-row add-row">
+				<div class="vtc-ctr">
+					<button>+</button>
+				</div>
+			</li>
 		</ul>
 	</div>
 
